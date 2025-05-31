@@ -1,0 +1,294 @@
+/* Pages.module.css */
+
+.pageContainer {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #e0f7fa, #fff);
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .formBox {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .heading {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #00796b;
+    margin-bottom: 1.5rem;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1rem;
+  }
+  
+  .button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #00796b;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:disabled {
+    background-color: #a7d6d1;
+    cursor: not-allowed;
+  }
+  
+  .error {
+    color: red;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .linkText {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.95rem;
+  }
+  
+  .linkText a {
+    color: #00796b;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .linkText a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Dashboard Styling */
+  .dashboardContainer {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  }
+  
+  .welcomeText {
+    font-size: 1.5rem;
+    color: #004d40;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .habitInput {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 1.5rem;
+  }
+  
+  .habitInput input {
+    flex: 1;
+    padding: 0.75rem;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .habitInput button {
+    background-color: #00796b;
+    color: white;
+    border: none;
+    padding: 0.75rem 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .habitList {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .habitItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    margin-bottom: 0.75rem;
+    background-color: #f1f8f9;
+    border-radius: 10px;
+  }
+  
+  .habitItem span {
+    cursor: pointer;
+  }
+  
+  .habitItem span.completed {
+    text-decoration: line-through;
+    color: #888;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00796b;
+    padding: 1rem 2rem;
+    border-radius: 0 0 16px 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    color: white;
+  }
+  
+  .navTitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  
+  .navRight {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+  
+  .navEmail {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  
+  .logoutButton {
+    background-color: white;
+    color: #00796b;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .logoutButton:hover {
+    background-color: #e0f7fa;
+  }
+ 
+  /* Animation for Streak */
+ /* Pages.module.css */
+
+.streakText {
+  margin-left: 10px;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+.pop {
+  animation: popEffect 0.4s ease-in-out;
+  color: gold;
+  font-weight: bold;
+}
+
+@keyframes popEffect {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+    color: #ff9800;
+  }
+  100% {
+    transform: scale(1);
+    color: #f57c00;
+  }
+}
+
+
+.calendarRow {
+  display: flex;
+  gap: 5px;
+  margin-top: 4px;
+  margin-bottom: 10px;
+}
+
+.dayBox {
+  width: 22px;
+  height: 22px;
+  font-size: 12px;
+  text-align: center;
+  line-height: 22px;
+  border-radius: 4px;
+  background-color: #eee;
+  color: #555;
+}
+
+.filled {
+  background-color: #4caf50;
+  color: white;
+}
+
+.today {
+  border: 2px solid #e9f0f6;
+}
+/* src/pages/Pages.module.css */
+
+.habitItem {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+}
+
+
+/* Progress bar container for each habit */
+.progressContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 20px;
+  align-items: flex-start;
+}
+
+.progressBarContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 300px;
+  height: 20px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  overflow: hidden;
+}
+
+
+.progressSegment {
+  flex-grow: 1;
+  height: 100%;
+  background-color: #ddd;
+  transition: background-color 0.3s ease;
+}
+
+.progressSegment.completed {
+  background-color: #4caf50; /* Green for completed */
+}
+
+.progressSegment.notCompleted {
+  background-color: #e7e1e1; /* Red for not completed */
+}
+
+
+
+.percentageLabel {
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #333;
+}
